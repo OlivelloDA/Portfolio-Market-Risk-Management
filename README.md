@@ -1,4 +1,4 @@
-# 📌 Portfolio Market Risk Management for a retail Equity/Equity Index investing portfolio
+# 📌 Portfolio Market Risk Management Equity/Equity Index investing portfolio
 
 > Implementation of basic market risk management metrics to keep track of the risk performances of a Equity/Equity Index portfolio. The logic is adapted for the portfolio positions report you can download from Degiro brokerage platform in April 2025.
 
