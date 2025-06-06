@@ -1,11 +1,10 @@
 # 📌 Portfolio Market Risk Management Equity/Equity Index investing portfolio
 
-> Implementation of basic market risk management metrics to keep track of the risk performances of a Equity/Equity Index portfolio. The logic is adapted for the portfolio positions report you can download from Degiro brokerage platform in April 2025.
+> Basic market risk management metrics are implemented to track the performance of an equity/equity index portfolio. This logic has been adapted for the Portfolio Positions Report that can be downloaded from the DeGiro brokerage platform at April 2025.
 >
 ## 📖 About
 
-The project is intended to be a reference for retail investors who want to track their risk performances. The project is based on a portfolio data csv file exported from Degiro broker in April 2025. 
-By downloading your portfolio data from Degiro and loading it in https://github.com/OlivelloDA/Portfolio-Market-Risk-Management/src/portfolioAnalytics/data/Portfolio.csv you can run the analysis for your portfolio.  
+This project is intended as a reference tool for retail investors who want to track their risk performance. It is based on a CSV file containing portfolio data exported from the Degiro broker in April 2025. You can run the analysis for your portfolio by downloading your portfolio data from Degiro and loading it into the Portfolio.csv file at https://github.com/OlivelloDA/Portfolio-Market-Risk-Management/src/portfolioAnalytics/data/
 
 Example:
 > Basic applications that calculate risk factor exposures, VaR, ES, Stress Tests.
