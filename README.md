@@ -154,14 +154,14 @@ monte_carlo:
 ```
 # Risk Methodologies
 ## Parametric VaR
-
+```text
 VaR = -P * (μ + z * σ)
 Where:
 P = Portfolio value
 μ = Mean return
 z = Z-score for confidence level
 σ = Portfolio volatility
-
+```
 ## Monte Carlo Simulation
 
 1. Calibrate stochastic processes
