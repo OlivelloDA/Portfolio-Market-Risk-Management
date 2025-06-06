@@ -103,25 +103,26 @@ python -c "import risk_metrics; print('Installation successful')"
 # Usage Examples
 
 ## Basic Risk Report
-
+```text
 from portfolio_analysis import Portfolio
 from risk_metrics import calculate_var
 
 portfolio = Portfolio.from_config('config/portfolio.json')
 var_results = calculate_var(portfolio, method='monte_carlo')
 var_results.save_report('output/risk_report.html')
-
+```
 ## Stress Testing
-
+```text
 from stress_testing import run_stress_scenarios
 
 scenarios = ['2008_crisis', '2020_covid', 'rate_shock+200bp']
 results = run_stress_scenarios(portfolio, scenarios)
 results.plot_impact()
-
+```
 # Configuration Options
 
 ## Portfolio Specification (JSON)
+```text
 {
   "name": "Global Balanced Portfolio",
   "base_currency": "USD",
@@ -138,9 +139,9 @@ results.plot_impact()
     }
   ]
 }
-
+```
 ## Risk Parameters
-
+```text
 var:
   confidence_level: 0.99
   horizon_days: 10
@@ -150,7 +151,7 @@ monte_carlo:
   simulations: 10000
   model: "Heston"
   random_seed: 42
-
+```
 # Risk Methodologies
 ## Parametric VaR
 
