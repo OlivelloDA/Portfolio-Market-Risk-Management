@@ -40,19 +40,21 @@ Supported asset classes:
 - Commodities
 
 ## Technical Architecture
+```text
 src/
 ├── main.py
 ├── portfolio_analysis/
-│ ├── portfolio.py
-│ ├── risk_metrics.py
-│ ├── monte_carlo.py
-│ └── stress_testing.py
+│   ├── portfolio.py
+│   ├── risk_metrics.py
+│   ├── monte_carlo.py
+│   └── stress_testing.py
 ├── data_management/
-│ ├── data_loader.py
-│ └── data_processor.py
+│   ├── data_loader.py
+│   └── data_processor.py
 └── visualization/
-├── plotter.py
-└── report_generator.py
+    ├── plotter.py
+    └── report_generator.py
+```
 
 ## Core Features
 
@@ -83,24 +85,24 @@ src/
 
 ### Setup
 
-# Clone repository
+## Clone repository
 git clone https://github.com/OlivelloDA/Portfolio-Market-Risk-Management.git
 cd Portfolio-Market-Risk-Management
 
-# Create virtual environment
+## Create virtual environment
 python -m venv .venv
 source .venv/bin/activate  # Linux/Mac
 .venv\Scripts\activate     # Windows
 
-# Install dependencies
+## Install dependencies
 pip install -r requirements.txt
 
-# Verify installation
+## Verify installation
 python -c "import risk_metrics; print('Installation successful')"
 
 # Usage Examples
 
-Basic Risk Report
+## Basic Risk Report
 
 from portfolio_analysis import Portfolio
 from risk_metrics import calculate_var
@@ -109,7 +111,7 @@ portfolio = Portfolio.from_config('config/portfolio.json')
 var_results = calculate_var(portfolio, method='monte_carlo')
 var_results.save_report('output/risk_report.html')
 
-Stress Testing
+## Stress Testing
 
 from stress_testing import run_stress_scenarios
 
@@ -118,13 +120,14 @@ results = run_stress_scenarios(portfolio, scenarios)
 results.plot_impact()
 
 # Configuration Options
-Portfolio Specification (JSON)
+
+## Portfolio Specification (JSON)
 {
   "name": "Global Balanced Portfolio",
   "base_currency": "USD",
   "positions": [
     {
-      "asset_id": "AAPL.US",
+      "asset_id": "AAPL.US",  
       "quantity": 1000,
       "asset_type": "equity"
     },
@@ -136,7 +139,7 @@ Portfolio Specification (JSON)
   ]
 }
 
-Risk Parameters
+## Risk Parameters
 
 var:
   confidence_level: 0.99
@@ -149,7 +152,7 @@ monte_carlo:
   random_seed: 42
 
 # Risk Methodologies
-Parametric VaR
+## Parametric VaR
 
 VaR = -P * (μ + z * σ)
 Where:
@@ -158,21 +161,21 @@ P = Portfolio value
 z = Z-score for confidence level
 σ = Portfolio volatility
 
-Monte Carlo Simulation
+## Monte Carlo Simulation
 
 1. Calibrate stochastic processes
 2. Generate correlated random paths
 3. Revalue portfolio under each scenario
 4. Calculate percentile losses
 
-Stress Testing Framework
+## Stress Testing Framework
 
 1. Historical scenarios
 2. Hypothetical shocks
 3. Reverse stress tests
 4. Plausibility checks
 
-MIT License
+# MIT License
 Copyright (c) [2025] [OlivelloDA]
 
 
