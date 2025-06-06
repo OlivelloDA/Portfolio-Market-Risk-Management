@@ -173,6 +173,9 @@ Stress Testing Framework
 3. Reverse stress tests
 4. Plausibility checks
 
+MIT License
+Copyright (c) [2025] [OlivelloDA]
+
 
 
 
